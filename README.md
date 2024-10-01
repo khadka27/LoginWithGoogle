@@ -1,6 +1,4 @@
 
-
-```
 # Login With Google
 
 This project demonstrates how to implement Google OAuth authentication using Passport.js in an Express application.
@@ -46,7 +44,7 @@ Make sure you have the following installed on your system:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/LoginWithGoogle.git
+   git clone https://github.com/khadka27/LoginWithGoogle.git
    cd LoginWithGoogle
    ```
 
