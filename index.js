@@ -1,10 +1,9 @@
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
-const passport = require('passport');  // Make sure to import passport here
+const passport = require('passport');  
 const app = express();
-const useRoutes = require('./routes/userRoute'); // Import routes
-
+const useRoutes = require('./routes/userRoute'); 
 // Serve static files
 app.use(express.static('public'));
 
@@ -13,7 +12,7 @@ app.use(session({
     secret: process.env.SESSION_SECRET || 'defaultSecret',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Set true if using HTTPS
+    cookie: { secure: false } 
 }));
 
 // Initialize Passport and session
@@ -24,7 +23,7 @@ app.use(passport.session());
 app.set('view engine', 'ejs');
 
 // Initialize passport configuration
-require('./config/passport');  // Ensure this is included here
+require('./config/passport');  
 
 // Routes
 app.use('/', useRoutes);
