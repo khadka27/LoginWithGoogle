@@ -1,4 +1,6 @@
 
+
+```
 # Login With Google
 
 This project demonstrates how to implement Google OAuth authentication using Passport.js in an Express application.
@@ -43,22 +45,26 @@ Make sure you have the following installed on your system:
 
 1. **Clone the repository:**
 
+   ```bash
    git clone https://github.com/yourusername/LoginWithGoogle.git
    cd LoginWithGoogle
-
+   ```
 
 2. **Install dependencies:**
 
+   ```bash
    npm install
+   ```
 
 3. **Create a `.env` file:**
 
    Copy the `.env.example` file and rename it to `.env`. Then, fill in your Google Client ID, Client Secret, and Session Secret.
 
+   ```plaintext
    GOOGLE_CLIENT_ID=your_google_client_id
    GOOGLE_CLIENT_SECRET=your_google_client_secret
    SESSION_SECRET=your_session_secret
-
+   ```
 
 ### Google Client ID and Secret
 
@@ -119,4 +125,4 @@ To obtain your Google Client ID and Client Secret, follow these steps:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
 
- 
+Feel free to copy and paste this into your `README.md` file!
